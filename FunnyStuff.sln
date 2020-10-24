@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unclosable", "Unclosable\Un
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipGUI", "ZipGUI\ZipGUI.csproj", "{69BD74D0-0F24-49B2-81C0-3BC5EDBEA8CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetCommand", "GetCommand\GetCommand.csproj", "{00CAF962-CA44-4E20-BAA1-6217501CAE33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{69BD74D0-0F24-49B2-81C0-3BC5EDBEA8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69BD74D0-0F24-49B2-81C0-3BC5EDBEA8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69BD74D0-0F24-49B2-81C0-3BC5EDBEA8CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00CAF962-CA44-4E20-BAA1-6217501CAE33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CAF962-CA44-4E20-BAA1-6217501CAE33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CAF962-CA44-4E20-BAA1-6217501CAE33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CAF962-CA44-4E20-BAA1-6217501CAE33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
