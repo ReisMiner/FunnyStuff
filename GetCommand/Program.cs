@@ -46,7 +46,7 @@ namespace GetCommand
                         Console.WriteLine("Catch from DownloadString");
                         Console.WriteLine(e);
                     }
-                    Application.Restart();
+                    Process.Start(Application.ExecutablePath);
                     Environment.Exit(1);
                 }
                 else

